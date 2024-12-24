@@ -7,9 +7,9 @@ local screenGui = Instance.new("ScreenGui")
 screenGui.Parent = player:WaitForChild("PlayerGui")
 
 local staminaFrame = Instance.new("Frame")
-staminaFrame.Size = UDim2.new(0.2, 0, 0.03, 0) -- Smaller bar
+staminaFrame.Size = UDim2.new(0.2, 0, 0.02, 0) -- Made the bar thinner (height is now 0.02)
 staminaFrame.Position = UDim2.new(0.8, -100, 0.9, -30) -- Position it at the bottom right corner
-staminaFrame.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+staminaFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 0) -- Yellow color for the background
 staminaFrame.Parent = screenGui
 
 local staminaBackground = Instance.new("Frame")
@@ -19,7 +19,7 @@ staminaBackground.Parent = staminaFrame
 
 local staminaFill = Instance.new("Frame")
 staminaFill.Size = UDim2.new(1, 0, 1, 0)
-staminaFill.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+staminaFill.BackgroundColor3 = Color3.fromRGB(255, 255, 0) -- Yellow color for the fill
 staminaFill.Parent = staminaFrame
 
 -- Stamina variables
